@@ -20,7 +20,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('frontend'));
 
 // Configuration Render
-const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';
 
 // Trust proxy (important pour Render)
