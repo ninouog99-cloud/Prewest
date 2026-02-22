@@ -26,7 +26,7 @@ const HOST = '0.0.0.0';
 app.set('trust proxy', 1);
 
 // Session configuration pour Render
-app.use(session({{
+app.use(session({
     secret: process.env.SESSION_SECRET || 'prewest-secret-key-2024-render',
     resave: false,
     saveUninitialized: false,
