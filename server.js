@@ -157,6 +157,12 @@ const requireAdmin = (req, res, next) => {
     }
 };
 
+// ==================== PAGE D'ACCUEIL ====================
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+});
+
 // ==================== ROUTES AUTHENTIFICATION ====================
 
 // Login
